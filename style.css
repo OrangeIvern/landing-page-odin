@@ -12,8 +12,9 @@
 }
 .formatter
 {
-    width: 80%;
+    width: 80vw;
     margin:0 auto;
+   
 }
 /*Navigation Bar*/
 
@@ -27,6 +28,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap:wrap ;
 }
 .header--main > ul
 {
@@ -34,6 +36,7 @@ display: flex;
 padding: 1rem;
 gap: 2rem;
 align-items: center;
+flex-wrap:wrap
 }
 .header--main > ul > li
 {
@@ -50,13 +53,18 @@ align-items: center;
 .hero--main
 {
 padding: 5rem 0;
-gap: 5rem;
+gap: 4rem;
 /* border: 2px solid white; */
 }
 .hero--main > div > img
 {
-max-width: 600px;
-border-radius: 3rem;
+width: 100%;
+
+}
+.img--container
+{ 
+    max-width: 500px;
+ border-radius: 3rem; 
 }
 .main--sub
 {
@@ -80,10 +88,11 @@ border-radius: 3rem;
 .main--sub > button
 {
     background-color: #3882F6;
-    max-width: 120px;
-    padding:.3rem;
+    max-width: 150px;
+    padding:1em;
     border-radius: 1rem;
     border: 0px transparent;
+
     
 }
 .main--sub > button:hover
@@ -101,4 +110,104 @@ border-radius: 3rem;
 {
     color:#3882F6;
       
+}
+/*Image Section*/
+.section--one 
+{
+    text-align: center;
+    padding-bottom: 5rem;
+
+}
+.section--one > .formatter > h3
+{
+    padding: 3rem;
+    font-size:2.1rem ;
+}
+.image--section
+{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:1rem;
+    margin: 0 auto;
+}
+
+.image--item > img
+{
+    max-width: 200px;
+    border-radius: 2rem;
+    
+   
+}
+.image--item 
+{
+    max-width:200px;
+    margin: 0 auto;
+}
+/*TEstimony Section*/
+.accent--color--two
+{
+    background-color: #e5e7eb;
+    padding: 8rem 0rem;
+}
+.accent--color--two > .formatter > h2
+{
+    font-size:2.2rem;
+    font-weight: lighter;
+    text-transform: italic;
+    font-style: italic;
+    max-width: 1100px;
+}
+.accent--color--two > .formatter > p
+{
+    margin-top: 1rem;
+    text-align: right;
+    font-weight: bolder;
+    margin-right: 10rem;
+}
+
+/*Sign up page*/
+.contact--section
+{
+    padding:  8em 0rem;
+    width: 85%;
+    margin:0 auto;
+}
+.contact-container
+{
+color: #F9FAF8;
+background: #3882F6;
+padding: 5vw 10vw;
+display: flex;
+justify-content: space-between;
+gap:2em;
+border-radius: 10px;
+flex-wrap: wrap;
+}
+.contact-container > div > h5
+{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.contact-container > button
+{
+    padding:1em 3em;
+    color:#F9FAF8;
+    background-color: #3882F6;
+    border-radius: 1em;
+    border:2px solid #F9FAF8;
+}
+.contact-container > button > a 
+{
+    text-decoration: none;
+    color:#F9FAF8;
+}
+
+.footer
+{
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    color: #F9FAF8;
 }
